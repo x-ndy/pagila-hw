@@ -4,7 +4,7 @@
  * Use tables payment, rental, customer, address, city, and country.
  * Order by country alphabetically.
  */
-
+ 
 SELECT co.country, sum(p.amount) AS profit
 FROM payment p
 JOIN rental r ON p.rental_id = r.rental_id
